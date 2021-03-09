@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title> Pranesh Tax Calculator </title>
+</head>
+
+<body>
+
+        <h3> Pranesh Tax Calculator <span>&#169;</span> </h3>
+
+        <label> Enter Monthly Salary </label>
+
+
+        <input type="number" id="monthSalary" name="salary" required />
+        <p> Marital Status </p>
+
+        <div id="MaritalStatusDiv">
+            <input type="radio" id="single" value="Single" name="singleOrMarried" /> Single
+            <input type="radio" id="married" value="Married" name="singleOrMarried" /> Married
+        </div>
+
+        <br />
+        <br />
+
+
+        <button id="calculateTax" type="submit" onclick="calculateTaxFn()"> Calculate Tax </button>
+
+    <br>
+
+    <h3> Your Annual Taxable Amount </h3>
+
+    <p id="annualTaxableAmount"> </p>
+
+    <h3> Your Monthly Taxable Amount </h3>
+
+    <p id="monthlyTaxableAmount"> </p>
+    <br>
+
+
+    <script type="text/javascript" src="TaxCalculator.js"> </script>
+</body>
+
+</html>
