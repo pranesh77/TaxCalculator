@@ -2,9 +2,15 @@ function calculateTaxFn() {
 
     var monthlySalary = document.getElementById("monthSalary").value;
 
+    
+    if(monthlySalary.value == null){
+        alert("Enter monthly salary");
+    }
+
     var myAnnualSalary = monthlySalary * 12;
 
     var maritalStatus = document.querySelector("input[name='singleOrMarried']:checked").value;
+
 
     var annualTaxableAmount = 0;
 
